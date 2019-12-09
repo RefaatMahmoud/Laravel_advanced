@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Facades #1
+Route::get('/postcards','PostCardController@postCard');
+Route::get('/facades','PostCardController@postCardWithFacade');
